@@ -1,13 +1,12 @@
 # CausalFSED
 
-- An implementation for EMNLP 2021 short paper ``Honey or Poison? Solving the Trigger Curse in Few-shot Event Detection via Causal Intervention``
+- An implementation for EMNLP 2021 short paper [``Honey or Poison? Solving the Trigger Curse in Few-shot Event Detection via Causal Intervention``](https://arxiv.org/abs/2109.05747)
 
 ## Quick links
 * [Environment](#Environment)
 * [Dataset](#Dataset)
 * [Model Training](#Model-Training)
 * [Model Evaluation](#Model-Evaluation)
-* [Citation](#Citation)
 
 ### Environment
 
