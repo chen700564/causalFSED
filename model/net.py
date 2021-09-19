@@ -18,6 +18,7 @@ class Bert_proto(Model):
         super(Bert_proto, self).__init__(vocab, regularizer)
         self.encoder = BertModel.from_pretrained(pretrainpath)
         self.f1 = F1()
+        self.typef1 = F1()
         self.metric = metric
         if self.metric == 'relation':
             self.relation = nn.Sequential(
@@ -108,6 +109,7 @@ class Bert_proto(Model):
 
         if not self.training:
             self.f1(class_logits,query_label,triggerset = query_triggerset)
+            self.typef1(class_logits,query_label,triggerset = query_triggerset)
 
         class_logits_reshape = class_logits.reshape([-1,class_logits.size(-1)])
         label = query_label.reshape([-1])
@@ -145,6 +147,7 @@ class Bert_causal(Model):
         super(Bert_causal, self).__init__(vocab, regularizer)
         self.encoder = BertModel.from_pretrained(pretrainpath)
         self.f1 = F1()
+        self.typef1 = F1()
         self.metric = metric
         if self.metric == 'relation':
             self.relation = nn.Sequential(
@@ -154,7 +157,7 @@ class Bert_causal(Model):
             )
         self.loss = nn.NLLLoss()
         initializer(self)
-        print(metric)
+        print('causal '+metric)
     
     def getnegfeature(self,tokenid,mask,index,label):
         batchsize = tokenid.size(0)
@@ -317,6 +320,7 @@ class Bert_causal(Model):
 
         if not self.training:
             self.f1(class_logits,query_label,triggerset = query_triggerset)
+            self.typef1(class_logits,query_label,triggerset = query_triggerset)
 
         class_logits_reshape = class_logits.reshape([-1,class_logits.size(-1)])
         label = query_label.reshape([-1])

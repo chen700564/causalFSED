@@ -236,7 +236,7 @@ class FewEventDetection_traincausalreader(DatasetReader):
     originp: the probability of original trigger word
     '''
     def __init__(self,
-                 K, Q, noise_length=2,maxlength=60,sentence="data/ACE2005/acesentence.json",instancenum=1,device=cuda,originp = 0.5,backdooruse = 'support',
+                 K, Q, noise_length=2,maxlength=60,sentence="data/ACE2005/acesentence.json",instancenum=1,device=0,originp = 0.5,backdooruse = 'support',
                  lazy: bool = False) -> None:
         super().__init__(lazy)
         self.K = K
@@ -248,7 +248,7 @@ class FewEventDetection_traincausalreader(DatasetReader):
         self.originp = originp
         self.backdooruse = backdooruse
         try:
-            self.pipe = pipeline('fill-mask',model='bert-base-uncased',tokenizer='bert-base-uncased',device=cuda,top_k=5)
+            self.pipe = pipeline('fill-mask',model='bert-base-uncased',tokenizer='bert-base-uncased',device=device,top_k=5)
         except:
             self.pipe = pipeline('fill-mask',model='bert-base-uncased',tokenizer='bert-base-uncased',device=-1,top_k=5)
         self.maxlength = maxlength
@@ -844,7 +844,6 @@ class FewEventDetection_devquerybaselinereader(DatasetReader):
             'query': query_set,
             'supportlist':support_list,
             'querylist':query_list,
-            'classname':class_name,
         }
         return batch_data
 
@@ -859,7 +858,6 @@ class FewEventDetection_devquerybaselinereader(DatasetReader):
             "query_label": ListField(data['query']['label']),
             "query_index": ListField(data['query']['index']),
             "query_triggerset": ListField(data['query']['triggerset']),
-            "classname": MetadataField(data['classname']),
         }
         return Instance(fields)
     

@@ -6,6 +6,10 @@
  .DS_Store?
 .AppleDouble
 .LSOverride
+*.json
+*.th
+*.txt
+tmp/*
 
 # Icon must end with two \r
 Icon

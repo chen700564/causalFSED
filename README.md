@@ -1,6 +1,6 @@
 # CausalFSED
 
-- An implementation for ``Honey or Poison? Solving the Trigger Curse in Few-shot Event Detection via Causal Intervention``
+- An implementation for EMNLP 2021 short paper ``Honey or Poison? Solving the Trigger Curse in Few-shot Event Detection via Causal Intervention``
 
 ## Quick links
 * [Environment](#Environment)
@@ -12,7 +12,7 @@
 ### Environment
 
 ```bash
-conda create --name causalfsed --file environment.txt
+conda create -n causalfsed python=3.7.3
 conda activate causalfsed
 pip install -r requirements.txt
 ```
@@ -66,11 +66,11 @@ For ACE2005, KBP2017 and MAVEN dataset, the files data/ace2005/acepreprocess.py,
 ### Model Training
 run:
 ```bash
-python main.py -model FS-Causal -metric proto -dataset dataset -cuda 0
+python main.py -model FSCausal -metric proto -dataset ace -cuda 0
 ```
-+ -model can be FS-base and FS-Causal
-+ -metric can be proto and relation
-+ -dataset can be ace, kbp, maven and custom
++ -model can be `FSBase` and `FSCausal`
++ -metric can be `proto` and `relation`
++ -dataset can be `ace`, `kbp`, `maven` and `custom`
 + -cudaid is the gpu id.
 
 where proto is Prototypical Network and relation is Relation Network.
@@ -79,6 +79,6 @@ The model checkpoint is saved in tmp/dataset/...
 ### Model Evaluation
 just add -t:
 ```bash
-python main.py -model FS-Causal -metric proto -dataset dataset -cuda 0 -t
+python main.py -model FSCausal -metric proto -dataset ace -cuda 0 -t
 ```
 

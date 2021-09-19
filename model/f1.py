@@ -22,7 +22,7 @@ class F1(Metric):
         self.predictresult = []
         self.goldresult = []
 
-    def decoder(self,logits,labels,triggerset,maxp=0.8):
+    def decoder(self,logits,labels,triggerset):
         predict_label = torch.argmax(logits, dim=-1)
         predict_label = predict_label.masked_fill(labels==-1,-1)
         if logits.size(-1) == 3:
@@ -69,7 +69,7 @@ class F1(Metric):
                 
                 
 
-    def __call__(self,logits, labels, triggerset = None, logitsec=None, weights=None):
+    def __call__(self,logits, labels, triggerset = None):
         '''
 
         logits : (Batchsize, q, tokens, d) / (Batchsize, q*tokens, d)  ...  按照词语分类 / 按照句子分类
