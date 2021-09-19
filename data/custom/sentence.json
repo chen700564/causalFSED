@@ -1,0 +1,423 @@
+[
+ {
+  "words": [
+   "The",
+   "2006",
+   "Pangandaran",
+   "earthquake",
+   "and",
+   "tsunami",
+   "occurred",
+   "on",
+   "July",
+   "17",
+   "at",
+   "along",
+   "a",
+   "subduction",
+   "zone",
+   "off",
+   "the",
+   "coast",
+   "of",
+   "west",
+   "and",
+   "central",
+   "Java",
+   ",",
+   "a",
+   "large",
+   "and",
+   "densely",
+   "populated",
+   "island",
+   "in",
+   "the",
+   "Indonesian",
+   "archipelago",
+   "."
+  ],
+  "event": [
+   [
+    "Catastrophe",
+    {
+     "text": "earthquake",
+     "start": 3,
+     "end": 4
+    }
+   ],
+   [
+    "Catastrophe",
+    {
+     "text": "tsunami",
+     "start": 5,
+     "end": 6
+    }
+   ],
+   [
+    "Presence",
+    {
+     "text": "occurred",
+     "start": 6,
+     "end": 7
+    }
+   ]
+  ]
+ },
+ {
+  "words": [
+   "The",
+   "shock",
+   "had",
+   "a",
+   "moment",
+   "magnitude",
+   "of",
+   "7.7",
+   "and",
+   "a",
+   "maximum",
+   "perceived",
+   "intensity",
+   "of",
+   "IV",
+   "(",
+   "``",
+   "Light",
+   "''",
+   ")",
+   "in",
+   "Jakarta",
+   ",",
+   "the",
+   "capital",
+   "and",
+   "largest",
+   "city",
+   "of",
+   "Indonesia",
+   "."
+  ],
+  "event": [
+   [
+    "Catastrophe",
+    {
+     "text": "shock",
+     "start": 1,
+     "end": 2
+    }
+   ],
+   [
+    "Know",
+    {
+     "text": "perceived",
+     "start": 11,
+     "end": 12
+    }
+   ]
+  ]
+ },
+ {
+  "words": [
+   "There",
+   "were",
+   "no",
+   "direct",
+   "effects",
+   "of",
+   "the",
+   "earthquake",
+   "'s",
+   "shaking",
+   "due",
+   "to",
+   "its",
+   "low",
+   "intensity",
+   ",",
+   "and",
+   "the",
+   "large",
+   "loss",
+   "of",
+   "life",
+   "from",
+   "the",
+   "event",
+   "was",
+   "due",
+   "to",
+   "the",
+   "resulting",
+   "tsunami",
+   ",",
+   "which",
+   "inundated",
+   "a",
+   "portion",
+   "of",
+   "the",
+   "Java",
+   "coast",
+   "that",
+   "had",
+   "been",
+   "unaffected",
+   "by",
+   "the",
+   "earlier",
+   "2004",
+   "Indian",
+   "Ocean",
+   "earthquake",
+   "and",
+   "tsunami",
+   "that",
+   "was",
+   "off",
+   "the",
+   "coast",
+   "of",
+   "Sumatra",
+   "."
+  ],
+  "event": [
+   [
+    "Catastrophe",
+    {
+     "text": "earthquake",
+     "start": 50,
+     "end": 51
+    }
+   ],
+   [
+    "Catastrophe",
+    {
+     "text": "earthquake",
+     "start": 7,
+     "end": 8
+    }
+   ],
+   [
+    "Causation",
+    {
+     "text": "due",
+     "start": 26,
+     "end": 27
+    }
+   ],
+   [
+    "Causation",
+    {
+     "text": "unaffected",
+     "start": 43,
+     "end": 44
+    }
+   ],
+   [
+    "Catastrophe",
+    {
+     "text": "tsunami",
+     "start": 30,
+     "end": 31
+    }
+   ],
+   [
+    "Motion",
+    {
+     "text": "shaking",
+     "start": 9,
+     "end": 10
+    }
+   ],
+   [
+    "Damaging",
+    {
+     "text": "loss",
+     "start": 19,
+     "end": 20
+    }
+   ],
+   [
+    "Causation",
+    {
+     "text": "resulting",
+     "start": 29,
+     "end": 30
+    }
+   ],
+   [
+    "Catastrophe",
+    {
+     "text": "tsunami",
+     "start": 52,
+     "end": 53
+    }
+   ],
+   [
+    "Influence",
+    {
+     "text": "effects",
+     "start": 4,
+     "end": 5
+    }
+   ],
+   [
+    "Destroying",
+    {
+     "text": "inundated",
+     "start": 33,
+     "end": 34
+    }
+   ]
+  ]
+ },
+ {
+  "words": [
+   "The",
+   "July",
+   "2006",
+   "earthquake",
+   "was",
+   "also",
+   "centered",
+   "in",
+   "the",
+   "Indian",
+   "Ocean",
+   ",",
+   "from",
+   "the",
+   "coast",
+   "of",
+   "Java",
+   ",",
+   "and",
+   "had",
+   "a",
+   "duration",
+   "of",
+   "more",
+   "than",
+   "three",
+   "minutes",
+   "."
+  ],
+  "event": [
+   [
+    "Catastrophe",
+    {
+     "text": "earthquake",
+     "start": 3,
+     "end": 4
+    }
+   ],
+   [
+    "Placing",
+    {
+     "text": "centered",
+     "start": 6,
+     "end": 7
+    }
+   ]
+  ]
+ },
+ {
+  "words": [
+   "An",
+   "abnormally",
+   "slow",
+   "rupture",
+   "at",
+   "the",
+   "Sunda",
+   "Trench",
+   "and",
+   "a",
+   "tsunami",
+   "that",
+   "was",
+   "unusually",
+   "strong",
+   "relative",
+   "to",
+   "the",
+   "size",
+   "of",
+   "the",
+   "earthquake",
+   "were",
+   "both",
+   "factors",
+   "that",
+   "led",
+   "to",
+   "it",
+   "being",
+   "categorized",
+   "as",
+   "a",
+   "tsunami",
+   "earthquake",
+   "."
+  ],
+  "event": [
+   [
+    "Catastrophe",
+    {
+     "text": "earthquake",
+     "start": 21,
+     "end": 22
+    }
+   ],
+   [
+    "Catastrophe",
+    {
+     "text": "earthquake",
+     "start": 34,
+     "end": 35
+    }
+   ],
+   [
+    "Protest",
+    {
+     "text": "relative",
+     "start": 15,
+     "end": 16
+    }
+   ],
+   [
+    "Catastrophe",
+    {
+     "text": "tsunami",
+     "start": 10,
+     "end": 11
+    }
+   ],
+   [
+    "Catastrophe",
+    {
+     "text": "tsunami",
+     "start": 33,
+     "end": 34
+    }
+   ],
+   [
+    "Destroying",
+    {
+     "text": "rupture",
+     "start": 3,
+     "end": 4
+    }
+   ],
+   [
+    "Causation",
+    {
+     "text": "led to",
+     "start": 26,
+     "end": 28
+    }
+   ]
+  ]
+ }
+]

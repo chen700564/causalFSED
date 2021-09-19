@@ -1,0 +1,2 @@
+allennlp==1.2.2
+transformers==3.5.1
