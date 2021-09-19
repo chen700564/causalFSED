@@ -9,7 +9,14 @@
 *.json
 *.th
 *.txt
-tmp/*
+tmp/ace/*
+tmp/kbp/*
+tmp/maven/*
+tmp/custom/*
+!tmp/ace/README.md
+!tmp/kbp/README.md
+!tmp/maven/README.md
+!tmp/custom/README.md
 
 # Icon must end with two \r
 Icon

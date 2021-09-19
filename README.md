@@ -73,7 +73,8 @@ python main.py -model FSCausal -metric proto -dataset ace -cuda 0
 + -cudaid is the gpu id.
 
 where proto is Prototypical Network and relation is Relation Network.
-The model checkpoint is saved in tmp/dataset/...
+
+The model checkpoint will be saved in tmp/dataset_name/...
 
 ### Model Evaluation
 just add -t:
